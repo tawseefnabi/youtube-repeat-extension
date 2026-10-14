@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-i18n-title="popupTitle">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,13 +8,43 @@
   </head>
   <body>
     <main>
-      <h1>YouTube Repeat</h1>
+      <h1 data-i18n="popupTitle"></h1>
+
       <label class="toggle">
         <input type="checkbox" id="loopToggle" />
-        <span>Loop current video</span>
+        <span data-i18n="loopCurrentVideo"></span>
       </label>
-      <p class="hint">Use the repeat icon next to the settings gear in the player.</p>
+
+      <section class="block">
+        <label for="repeatLimit" data-i18n="repeatCount"></label>
+        <input type="number" id="repeatLimit" min="0" max="999" step="1" value="0" />
+        <p class="meta" data-i18n="repeatCountHint"></p>
+        <p id="remainingText" class="meta"></p>
+      </section>
+
+      <section class="block">
+        <h2 data-i18n="abLoopTitle"></h2>
+        <p class="meta" data-i18n="abLoopHelp"></p>
+        <label class="toggle portion">
+          <input type="checkbox" id="portionOnly" />
+          <span data-i18n="loopPortion"></span>
+        </label>
+        <div class="row">
+          <button type="button" id="setA" class="secondary" data-i18n="setA"></button>
+          <button type="button" id="setB" class="secondary" data-i18n="setB"></button>
+          <button type="button" id="clearAb" class="secondary" data-i18n="clear"></button>
+        </div>
+        <p id="abText" class="meta"></p>
+      </section>
+
+      <p id="statusText" class="meta"></p>
+      <p id="totalText" class="meta"></p>
+      <p class="hint">
+        <span data-i18n="shortcutHint"></span> ·
+        <a href="options.html" target="_blank" rel="noopener" data-i18n="options"></a>
+      </p>
     </main>
+    <script src="i18n-ui.js"></script>
     <script src="popup.js"></script>
   </body>
 </html>

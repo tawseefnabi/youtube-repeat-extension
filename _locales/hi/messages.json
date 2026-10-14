@@ -1,0 +1,113 @@
+{
+  "extName": {
+    "message": "YouTube Repeat"
+  },
+  "extDesc": {
+    "message": "YouTube loop in one click: repeat the current video. Auto replay with a player button by settings. Simple looper for YouTube."
+  },
+  "popupTitle": {
+    "message": "YouTube Repeat"
+  },
+  "loopCurrentVideo": {
+    "message": "वीडियो लूप करें"
+  },
+  "repeatCount": {
+    "message": "Repeat count"
+  },
+  "repeatCountHint": {
+    "message": "0 = forever until you turn loop off"
+  },
+  "forever": {
+    "message": "Forever"
+  },
+  "remaining": {
+    "message": "Remaining: $1"
+  },
+  "abLoopTitle": {
+    "message": "A–B loop (segment)"
+  },
+  "abLoopHelp": {
+    "message": "Pause at start/end, then set points — or use right‑click on the player repeat button."
+  },
+  "setA": {
+    "message": "Set A"
+  },
+  "setB": {
+    "message": "Set B"
+  },
+  "clear": {
+    "message": "Clear"
+  },
+  "loopPortion": {
+    "message": "केवल हिस्सा लूप करें"
+  },
+  "noAbSegment": {
+    "message": "No A–B segment set."
+  },
+  "segmentRange": {
+    "message": "Segment: $1 → $2"
+  },
+  "sessionReplays": {
+    "message": "Replays this session: $1"
+  },
+  "totalReplays": {
+    "message": "Total replays (this video): $1"
+  },
+  "liveUnavailable": {
+    "message": "Live stream — loop is unavailable."
+  },
+  "openVideoPage": {
+    "message": "Open a YouTube or Vimeo watch page first."
+  },
+  "options": {
+    "message": "Options"
+  },
+  "shortcutHint": {
+    "message": "Shortcut: Alt+L"
+  },
+  "onboardingHint": {
+    "message": "Click to loop · Right‑click for menu"
+  },
+  "menuLoop": {
+    "message": "Loop"
+  },
+  "repeatVideo": {
+    "message": "Repeat video"
+  },
+  "repeatIsOn": {
+    "message": "Repeat is on"
+  },
+  "repeatLeft": {
+    "message": "Repeat on ($1 left)"
+  },
+  "abLoopOn": {
+    "message": "A–B loop on ($1–$2)"
+  },
+  "liveRepeatUnavailable": {
+    "message": "Repeat unavailable on live streams"
+  },
+  "optionsTitle": {
+    "message": "Options"
+  },
+  "hideOnShorts": {
+    "message": "Hide repeat button on YouTube Shorts"
+  },
+  "loopDelayLabel": {
+    "message": "Delay before replay (seconds)"
+  },
+  "shortcutsHint": {
+    "message": "Keyboard shortcut: configure at chrome://extensions/shortcuts"
+  },
+  "saved": {
+    "message": "Saved."
+  },
+  "panelSetA": {
+    "message": "Set start (A)"
+  },
+  "panelSetB": {
+    "message": "Set end (B)"
+  },
+  "panelClear": {
+    "message": "Clear segment"
+  }
+}

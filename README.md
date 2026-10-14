@@ -1,6 +1,6 @@
 # YouTube Repeat
 
-A Chrome extension (Manifest V3) that loops the current YouTube video. A loop button appears in the player controls; you can also toggle loop from the extension popup. Your choice syncs across tabs.
+A Chrome extension (Manifest V3) that loops **YouTube** and **Vimeo** videos. A loop button sits on the player; **right‑click** it for A–B controls. The popup adds custom **repeat count (0–999)**, **Loop a portion only**, session + **total replay counter**, and **Alt+L**. UI strings support **55 Chrome locales** (see `_locales/`). Settings sync across tabs.
 
 ## Install (developer / unpacked)
 
@@ -13,9 +13,11 @@ A Chrome extension (Manifest V3) that loops the current YouTube video. A loop bu
 
 1. Open any video on [YouTube](https://www.youtube.com).
 2. Click the **repeat** icon in the player bar (before settings). Hover for the tooltip.
-3. Or click the extension icon in the toolbar and check **Loop current video**.
+3. Or click the extension icon: toggle loop, choose **Forever / 2 / 5 / 10** repeats, or set **A** and **B** at the playhead for a segment loop.
+4. Press **Alt+L** on YouTube to toggle loop (when the tab is focused).
+5. **Options** (right-click extension → Options): hide the button on Shorts, add a short delay before replay.
 
-The video restarts from the beginning when it ends while loop is on.
+Live streams disable loop automatically. Loop defaults **on** for new installs.
 
 ## Project layout
 
@@ -24,7 +26,9 @@ The video restarts from the beginning when it ends while loop is on.
 | `manifest.json`| Extension config                          |
 | `content.js`   | Injects player button, handles loop logic |
 | `content.css`  | Active loop button styling                |
-| `popup.html/js`| Toolbar popup toggle                        |
+| `popup.html/js`| Toolbar popup (loop, repeat count, A–B)     |
+| `background.js`| Keyboard shortcut → content script        |
+| `options.html/js`| Shorts visibility, replay delay         |
 | `icons/`       | Extension icons                           |
 
 ## Check before upload / publish
@@ -37,7 +41,7 @@ From this folder:
 
 Then in Chrome:
 
-1. Reload the extension on `chrome://extensions` (version **1.1.2+**).
+1. Reload the extension on `chrome://extensions` (version **1.3.0**).
 2. Hard refresh a YouTube watch page (`Cmd+Shift+R`).
 3. Open the extension **Errors** card → **Clear all**.
 4. Play a video, toggle repeat, change videos — confirm **Errors** stays empty.

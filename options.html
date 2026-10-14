@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" data-i18n-title="optionsTitle">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Options</title>
+    <link rel="stylesheet" href="options.css" />
+  </head>
+  <body>
+    <main>
+      <h1 data-i18n="optionsTitle"></h1>
+
+      <label class="toggle">
+        <input type="checkbox" id="hideOnShorts" />
+        <span data-i18n="hideOnShorts"></span>
+      </label>
+
+      <label class="field">
+        <span data-i18n="loopDelayLabel"></span>
+        <input type="number" id="loopDelay" min="0" max="5" step="1" />
+      </label>
+
+      <p class="hint" data-i18n="shortcutsHint"></p>
+      <p id="saved" class="saved" hidden data-i18n="saved"></p>
+    </main>
+    <script src="i18n-ui.js"></script>
+    <script src="options.js"></script>
+  </body>
+</html>
