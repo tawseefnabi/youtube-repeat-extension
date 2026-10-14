@@ -12,7 +12,7 @@ A Chrome extension (Manifest V3) that loops the current YouTube video. A loop bu
 ## Use
 
 1. Open any video on [YouTube](https://www.youtube.com).
-2. Click the **loop** icon in the player bar (near settings). When active, it turns blue.
+2. Click the **repeat** icon in the player bar (before settings). Hover for the tooltip.
 3. Or click the extension icon in the toolbar and check **Loop current video**.
 
 The video restarts from the beginning when it ends while loop is on.
@@ -26,6 +26,21 @@ The video restarts from the beginning when it ends while loop is on.
 | `content.css`  | Active loop button styling                |
 | `popup.html/js`| Toolbar popup toggle                        |
 | `icons/`       | Extension icons                           |
+
+## Check before upload / publish
+
+From this folder:
+
+```bash
+./scripts/validate.sh
+```
+
+Then in Chrome:
+
+1. Reload the extension on `chrome://extensions` (version **1.1.2+**).
+2. Hard refresh a YouTube watch page (`Cmd+Shift+R`).
+3. Open the extension **Errors** card → **Clear all**.
+4. Play a video, toggle repeat, change videos — confirm **Errors** stays empty.
 
 ## Firefox
 

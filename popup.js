@@ -2,6 +2,11 @@ const STORAGE_KEY = "ytRepeatEnabled";
 const toggle = document.getElementById("loopToggle");
 
 chrome.storage.sync.get(STORAGE_KEY, (data) => {
+  if (data[STORAGE_KEY] === undefined) {
+    toggle.checked = true;
+    chrome.storage.sync.set({ [STORAGE_KEY]: true });
+    return;
+  }
   toggle.checked = Boolean(data[STORAGE_KEY]);
 });
 
